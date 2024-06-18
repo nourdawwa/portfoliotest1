@@ -1,0 +1,111 @@
+.hero {
+  padding: 0 6rem;
+  white-space: nowrap;
+}
+
+.align {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.nour {
+  color: var(--clr-secondary-700);
+  font-weight: 900;
+  align-self: flex-start;
+  text-shadow: 0 0 2em rgba(0,0,0,0.9);
+  user-select: none;
+}
+.based {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--size-4xl);
+  user-select: none;
+  align-self: flex-end;
+  text-shadow: 0 0 3em rgba(0,0,0,0.6);
+}
+.based__text {
+  display: inline;
+  color: var(--clr-secondary-600);
+  font-weight: 900;
+}
+
+.based__sy {
+  aspect-ratio: 1.09;
+  width: 4rem;
+  height: 4rem;
+  display: inline;
+  user-select: none;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll{
+  overflow: hidden;
+  padding: 2rem 0;
+  user-select: none;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+  white-space: nowrap;
+}
+
+.scroll__wrapper {
+  display: inline-block;
+  position: relative;
+  
+  animation: 90s slide infinite linear;
+}
+
+.scroll__item {
+
+  color: var(--clr-secondary-900);
+  font-family: "SatoshiItalic", sans-serif;
+  font-size: var(--size-10xl);
+  font-weight: 1000;
+  
+  margin: 0 0.5rem;
+  display: inline-block;
+
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .nour{
+    font-size: var(--size-4xl);
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .nour{
+    font-size: var(--size-6xl);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .nour{
+    font-size: var(--size-8xl);
+  }
+}
+
+/* ls */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* xxl */
+/* @media (min-width: 1536px) {} */

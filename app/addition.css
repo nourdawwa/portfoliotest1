@@ -1,0 +1,94 @@
+:root {
+  --clr-dark: #020617; /* slate */
+  --clr-light: #cbd5e1;
+  --clr-primary-400: #a8a29e; /* gray */
+  --clr-primary-600: #57534e;
+  --clr-primary-800: #292524; 
+  --clr-secondary-600: #4b5563; /* stone */
+  --clr-secondary-700: #374151;
+  --clr-secondary-900: #111827;
+  --clr-thirdly-900: #0f172a; /* slate */
+
+
+  /* Sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5em);
+}
+
+body{
+  font-family: "Satoshi", sans-serif;
+  font-weight: 700;
+  background-color: var(--clr-light);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("../public/fonts/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: fallback;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SatoshiItalic";
+  src: url("../public/fonts/Satoshi-VariableItalic.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: fallback;
+  font-style: italic;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a{
+  color: var(--clr-secondary-700);
+}
+a:hover{
+  color: var(--clr-secondary-900);
+  cursor: pointer;
+}
+
+strong{
+  color: var(--clr-secondary-900);
+}
+
+h1{
+  margin: 0;
+}
